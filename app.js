@@ -5,7 +5,7 @@ const cors=require('cors');
 const helmet=require('helmet');
 const morgan=require('morgan');
 const dotenv=require('dotenv');
-dotenv.config({path:'./conf.env'});
+dotenv.config({path:'./Config/conf.env'});
 
 //############### declaring the differents principales middlewares
 //==== track request time

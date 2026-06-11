@@ -1,10 +1,14 @@
 //========== importing modules or packages
 const app=require('./app');
 const dotenv=require('dotenv');
-dotenv.config({path:'./conf.env'});
+dotenv.config({path:'./Config/conf.env'});
+const connectDB = require("./Config/db");
 
 //========declaring our variables 
 const port=process.env.PORT;
+
+//==== starting DB
+connectDB();
 
 //===== starting our server
 app.listen(port,()=>{
